@@ -1,0 +1,30 @@
+{
+  "name": "realidator",
+  "version": "0.0.1",
+  "description": "its an react validator library for value validation",
+  "main": "index.js",
+  "repository": "git@github.com:Mansi1/realidator.git",
+  "author": "Michael Mannseicher <m.mansi1@gmx.net>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prebuild": "npx st-rm-rf dist",
+    "build": "tsc",
+    "postbuild": "npx st-cp package.json README.md dist"
+  },
+  "keywords": [
+    "validator",
+    "form",
+    "react",
+    "realidator"
+  ],
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.49",
+    "typescript": "^4.0.2"
+  }
+}
